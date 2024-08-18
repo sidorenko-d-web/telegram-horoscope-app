@@ -8,8 +8,9 @@ import { signs } from "./assets/signs";
 const tg = window.Telegram.WebApp;
 
 function App() {
+  const user = tg.initDataUnsafe
   const [language, setLanguage] = useState<"en" | "ru">(
-    tg.initDataUnsafe.user.language_code
+    user ? user.user.language_code : "en"
   );
 
   const changeLanguage = () => {
