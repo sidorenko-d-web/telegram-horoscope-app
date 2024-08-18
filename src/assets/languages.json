@@ -1,0 +1,64 @@
+{
+  "title": {
+    "en": "Horoscope",
+    "ru": "Гороскоп"
+  },
+  "subtitle": {
+    "en": "Select your sign",
+    "ru": "Выберите ваш знак"
+  },
+  "changeLangBtn":{
+    "en": "Перейти на русский",
+    "ru": "Switch to English"
+  },
+  "signs": {
+    "aries": {
+      "en": "Aries",
+      "ru": "Овен"
+    },
+    "cancer": {
+      "en": "Cancer",
+      "ru": "Рак"
+    },
+    "taurus": {
+      "en": "Taurus",
+      "ru": "Телец"
+    },
+    "leo": {
+      "en": "Leo",
+      "ru": "Лев"
+    },
+    "scorpio": {
+      "en": "Scorpio",
+      "ru": "Скорпион"
+    },
+    "gemini": {
+      "en": "Gemini",
+      "ru": "Близнецы"
+    },
+    "virgo": {
+      "en": "Virgo",
+      "ru": "Дева"
+    },
+    "sagittarius": {
+      "en": "Saggitarius",
+      "ru": "Стрелец"
+    },
+    "capricorn": {
+      "en": "Capricorn",
+      "ru": "Козерог"
+    },
+    "aquarius": {
+      "en": "Aquarius",
+      "ru": "Водолей"
+    },
+    "pisces": {
+      "en": "Pisces",
+      "ru": "Рыбы"
+    },
+    "libra": {
+      "en": "Libra",
+      "ru": "Весы"
+    }
+  }
+}
