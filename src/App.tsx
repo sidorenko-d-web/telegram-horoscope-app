@@ -1,6 +1,6 @@
 import { SignItem } from "./components/SignItem";
 import text from "./assets/languages.json";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoLanguageSharp } from "react-icons/io5";
 import { signs } from "./assets/signs";
 
@@ -8,10 +8,13 @@ import { signs } from "./assets/signs";
 const tg = window.Telegram.WebApp;
 
 function App() {
-  const user = tg.initDataUnsafe
-  const [language, setLanguage] = useState<"en" | "ru">(
-    user.user ? user.user.language_code : "en"
-  );
+  const initialData = tg.initDataUnsafe
+
+  const [language, setLanguage] = useState<"en" | "ru">("en");
+
+  useEffect(() => {
+    setLanguage(initialData.user.language_code)
+  }, [initialData.user])
 
   const changeLanguage = () => {
     setLanguage((prev) => (prev === "en" ? "ru" : "en"));
